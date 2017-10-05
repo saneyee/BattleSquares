@@ -1,0 +1,160 @@
+body {
+  background-color:black;
+}
+
+#topper {
+  text-align:center;
+  font-family: 'Poiret One';
+  background-color:#43344c;
+}
+
+#topper h1 {
+  font-size:100px;
+}
+
+.container {
+  width:1230px;
+  height:800px;
+  background:black;
+  color:white;
+  margin-top:100px;
+  border: 15px solid #43344c;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("https://vignette3.wikia.nocookie.net/residentevil/images/6/68/Queen-Zenobia_20111121.jpg/revision/latest?cb=20120509221201");
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+input {
+  display: none;
+}
+.btn-transparent{
+  background: transparent;
+
+  color: white;
+  -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+  -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+  border: 2px solid white;
+}
+
+.player2 {
+  margin-left:100px;
+  margin-right:100px;
+  display:none;
+}
+
+.player1 {
+  margin-left:100px;
+  margin-right:100px;
+  color:white;
+}
+
+.combined {
+  display: none;
+  margin-left:100px;
+  margin-right:100px;
+  color:white;
+}
+
+.purplebox {
+  background-color:#43344c;
+}
+
+.greenbox {
+  background-color:#639680;
+}
+
+#a1, #a2 , #a3, #a4, #a5, #a6,
+#a7, #a10 , #a15, #a16, #a21, #a22,
+#a8, #a11 , #a14, #a17, #a20, #a23,
+#a9, #a12 , #a13, #a18, #a19, #a24,
+#a25, #a26, #a27, #a28, #a29, #a30,
+#a36, #a35, #a34, #a33, #a32, #a31{
+  width:80px;
+  height:80px;
+  display: table-cell;
+  border:1px solid black;
+}
+
+#b1, #b2 , #b3, #b4, #b5, #b6,
+#b7, #b10 , #b15, #b16, #b21, #b22,
+#b8, #b11 , #b14, #b17, #b20, #b23,
+#b9, #b12 , #b13, #b18, #b19, #b24,
+#b25, #b26, #b27, #b28, #b29, #b30,
+#b36, #b35, #b34, #b33, #b32, #b31{
+  width:80px;
+  height:80px;
+  display: table-cell;
+  border:1px solid black;
+}
+
+#c1, #c2 , #c3, #c4, #c5, #c6,
+#c7, #c10 , #c15, #c16, #c21, #c22,
+#c8, #c11 , #c14, #c17, #c20, #c23,
+#c9, #c12 , #c13, #c18, #c19, #c24,
+#c25, #c26, #c27, #c28, #c29, #c30,
+#c36, #c35, #c34, #c33, #c32, #c31{
+  width:80px;
+  height:80px;
+  display: table-cell;
+  border:2px solid #43344c;
+}
+
+#a1:hover, #a2:hover , #a3:hover, #a4:hover, #a5:hover, #a6:hover,
+#a7:hover, #a10:hover , #a15:hover, #a16:hover, #a21:hover, #a22:hover,
+#a8:hover, #a11:hover , #a14:hover, #a17:hover, #a20:hover, #a23:hover,
+#a9:hover, #a12:hover , #a13:hover, #a18:hover, #a19:hover, #a24:hover,
+#a25:hover, #a26:hover, #a27:hover, #a28:hover, #a29:hover, #a30:hover,
+#a36:hover, #a35:hover, #a34:hover, #a33:hover, #a32:hover, #a31:hover{
+  background-color: black;
+}
+
+#b1:hover, #b2:hover , #b3:hover, #b4:hover, #b5:hover, #b6:hover,
+#b7:hover, #b10:hover , #b15:hover, #b16:hover, #b21:hover, #b22:hover,
+#b8:hover, #b11:hover , #b14:hover, #b17:hover, #b20:hover, #b23:hover,
+#b9:hover, #b12:hover , #b13:hover, #b18:hover, #b19:hover, #b24:hover,
+#b25:hover, #b26:hover, #b27:hover, #b28:hover, #b29:hover, #b30:hover,
+#b36:hover, #b35:hover, #b34:hover, #b33:hover, #b32:hover, #b31:hover{
+  background-color: black;
+}
+
+#c1:hover, #c2:hover , #c3:hover, #c4:hover, #c5:hover, #c6:hover,
+#c7:hover, #c10:hover , #c15:hover, #c16:hover, #c21:hover, #c22:hover,
+#c8:hover, #c11:hover , #c14:hover, #c17:hover, #c20:hover, #c23:hover,
+#c9:hover, #c12:hover , #c13:hover, #c18:hover, #c19:hover, #c24:hover,
+#c25:hover, #c26:hover, #c27:hover, #c28:hover, #c29:hover, #c30:hover,
+#c36:hover, #c35:hover, #c34:hover, #c33:hover, #c32:hover, #c31:hover{
+  background-color: black;
+}
+
+.col-md-6 {
+  float: left;
+}
+
+button {
+  margin-top:10px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.miss {
+  background-color: red;
+}
+
+.hit{
+  background-color: green;
+}
+.remain{
+  background-color: yellow;
+}
+
+form {
+  margin-bottom:10px;
+}
+
+.select {
+  background-color: orange;
+}

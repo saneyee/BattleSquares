@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Battleships AI</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/computerstyles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/computerScripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="topper">
+      <h1>VS Computer</h1>
+    </div>
+    <div class="player1">
+      <form class="player1Board">
+        <h1> <span>Player 1</span></h1>
+        <div class="row">
+
+          <div class="col-md-2" id="c1">
+            <input type="checkbox" name=player1 value = 0>
+          </div>
+          <div class="col-md-2" id="c2">
+            <input type="checkbox" name=player1 value = 1>
+          </div>
+          <div class="col-md-2" id="c3">
+            <input type="checkbox" name=player1 value = 2>
+          </div>
+          <div class="col-md-2" id="c4">
+            <input type="checkbox" name=player1 value = 3>
+          </div>
+          <div class="col-md-2" id="c5">
+            <input type="checkbox" name=player1 value = 4>
+          </div>
+          <div class="col-md-2" id="c6">
+            <input type="checkbox" name=player1 value = 5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2" id="c7">
+            <input type="checkbox" name=player1 value = 6>
+          </div>
+          <div class="col-md-2"  id="c8">
+            <input type="checkbox" name=player1 value = 7>
+          </div>
+          <div class="col-md-2" id="c9">
+            <input type="checkbox" name=player1 value = 8>
+          </div>
+          <div class="col-md-2" id="c10">
+            <input type="checkbox" name=player1 value = 9>
+          </div>
+          <div class="col-md-2" id="c11">
+            <input type="checkbox" name=player1 value = 10>
+          </div>
+          <div class="col-md-2" id="c12">
+            <input type="checkbox" name=player1 value = 11>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2" id="c13">
+            <input type="checkbox" name=player1 value = 12>
+          </div>
+          <div class="col-md-2" id="c14">
+            <input type="checkbox" name=player1 value = 13>
+          </div>
+          <div class="col-md-2" id="c15">
+            <input type="checkbox" name=player1 value = 14>
+          </div>
+          <div class="col-md-2" id="c16">
+            <input type="checkbox" name=player1 value = 15>
+          </div>
+          <div class="col-md-2" id="c17">
+            <input type="checkbox" name=player1 value = 16>
+          </div>
+          <div class="col-md-2" id="c18">
+            <input type="checkbox" name=player1 value = 17>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2" id="c19">
+            <input type="checkbox" name=player1 value = 18>
+          </div>
+          <div class="col-md-2" id="c20">
+            <input type="checkbox" name=player1 value = 19>
+          </div>
+          <div class="col-md-2" id="c21">
+            <input type="checkbox" name=player1 value = 20>
+          </div>
+          <div class="col-md-2" id="c22">
+            <input type="checkbox" name=player1 value = 21>
+          </div>
+          <div class="col-md-2" id="c23">
+            <input type="checkbox" name=player1 value = 22>
+          </div>
+          <div class="col-md-2" id="c24">
+            <input type="checkbox" name=player1 value = 23>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2" id="c25">
+            <input type="checkbox" name=player1 value = 24>
+          </div>
+          <div class="col-md-2" id="c26">
+            <input type="checkbox" name=player1 value = 25>
+          </div>
+          <div class="col-md-2" id="c27">
+            <input type="checkbox" name=player1 value = 26>
+          </div>
+          <div class="col-md-2" id="c28">
+            <input type="checkbox" name=player1 value = 27>
+          </div>
+          <div class="col-md-2" id="c29">
+            <input type="checkbox" name=player1 value = 28>
+          </div>
+          <div class="col-md-2" id="c30">
+            <input type="checkbox" name=player1 value = 29>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2" id="c31">
+            <input type="checkbox" name=player1 value = 30>
+          </div>
+          <div class="col-md-2" id="c32">
+            <input type="checkbox" name=player1 value = 31>
+          </div>
+          <div class="col-md-2" id="c33">
+            <input type="checkbox" name=player1 value = 32>
+          </div>
+          <div class="col-md-2" id="c34">
+            <input type="checkbox" name=player1 value = 33>
+          </div>
+          <div class="col-md-2" id="c35">
+            <input type="checkbox" name=player1 value = 34>
+          </div>
+          <div class="col-md-2" id="c36">
+            <input type="checkbox" name=player1 value = 35>
+          </div>
+        </div>
+
+        <button type="submit" name="button" class="btn btn-transparent">Submit</button>
+      </form>
+    </div>
+    <br>
+
+    <div class="combined">
+      <div class="row">
+        <div class="col-md-6">
+      <form class="playingBoard">
+
+        <h1 class="playerA"><span>Player 1</span></h1>
+        <div class="row">
+
+          <div class="col-md-2 purplebox" id="a1">
+          </div>
+          <div class="col-md-2 purplebox" id="a2">
+          </div>
+          <div class="col-md-2 purplebox" id="a3">
+          </div>
+          <div class="col-md-2 purplebox" id="a4">
+          </div>
+          <div class="col-md-2 purplebox" id="a5">
+          </div>
+          <div class="col-md-2 purplebox" id="a6">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 purplebox" id="a7">
+          </div>
+          <div class="col-md-2 purplebox"  id="a8">
+          </div>
+          <div class="col-md-2 purplebox" id="a9">
+          </div>
+          <div class="col-md-2 purplebox" id="a10">
+          </div>
+          <div class="col-md-2 purplebox" id="a11">
+          </div>
+          <div class="col-md-2 purplebox" id="a12">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 purplebox" id="a13">
+          </div>
+          <div class="col-md-2 purplebox" id="a14">
+          </div>
+          <div class="col-md-2 purplebox" id="a15">
+          </div>
+          <div class="col-md-2 purplebox" id="a16">
+          </div>
+          <div class="col-md-2 purplebox" id="a17">
+          </div>
+          <div class="col-md-2 purplebox" id="a18">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 purplebox" id="a19">
+          </div>
+          <div class="col-md-2 purplebox" id="a20">
+          </div>
+          <div class="col-md-2 purplebox" id="a21">
+          </div>
+          <div class="col-md-2 purplebox" id="a22">
+          </div>
+          <div class="col-md-2 purplebox" id="a23">
+          </div>
+          <div class="col-md-2 purplebox" id="a24">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 purplebox" id="a25">
+          </div>
+          <div class="col-md-2 purplebox" id="a26">
+          </div>
+          <div class="col-md-2 purplebox" id="a27">
+          </div>
+          <div class="col-md-2 purplebox" id="a28">
+          </div>
+          <div class="col-md-2 purplebox" id="a29">
+          </div>
+          <div class="col-md-2 purplebox" id="a30">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 purplebox" id="a31">
+          </div>
+          <div class="col-md-2 purplebox" id="a32">
+          </div>
+          <div class="col-md-2 purplebox" id="a33">
+          </div>
+          <div class="col-md-2 purplebox" id="a34">
+          </div>
+          <div class="col-md-2 purplebox" id="a35">
+          </div>
+          <div class="col-md-2 purplebox" id="a36">
+          </div>
+          </div>
+      </form>
+        </div>
+        <div class="col-md-6">
+      <form class="playingBoard2">
+        <h1 class ="playerB"> Computer </h1>
+        <div class="row">
+          <div class="col-md-2 greenbox" id = "b1">
+          </div>
+          <div class="col-md-2 greenbox" id = "b2">
+          </div>
+          <div class="col-md-2 greenbox" id = "b3">
+          </div>
+          <div class="col-md-2 greenbox" id = "b4">
+          </div>
+          <div class="col-md-2 greenbox" id = "b5">
+          </div>
+          <div class="col-md-2 greenbox" id = "b6">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 greenbox" id = "b7">
+          </div>
+          <div class="col-md-2 greenbox" id = "b8">
+          </div>
+          <div class="col-md-2 greenbox" id = "b9">
+          </div>
+          <div class="col-md-2 greenbox" id = "b10">
+          </div>
+          <div class="col-md-2 greenbox" id = "b11">
+          </div>
+          <div class="col-md-2 greenbox" id = "b12">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 greenbox" id = "b13">
+          </div>
+          <div class="col-md-2 greenbox" id = "b14">
+          </div>
+          <div class="col-md-2 greenbox" id = "b15">
+          </div>
+          <div class="col-md-2 greenbox" id = "b16">
+          </div>
+          <div class="col-md-2 greenbox" id = "b17">
+          </div>
+          <div class="col-md-2 greenbox" id = "b18">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 greenbox" id = "b19">
+          </div>
+          <div class="col-md-2 greenbox" id = "b20">
+          </div>
+          <div class="col-md-2 greenbox" id = "b21">
+          </div>
+          <div class="col-md-2 greenbox" id = "b22">
+          </div>
+          <div class="col-md-2 greenbox" id = "b23">
+          </div>
+          <div class="col-md-2 greenbox" id = "b24">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 greenbox" id = "b25">
+          </div>
+          <div class="col-md-2 greenbox" id = "b26">
+          </div>
+          <div class="col-md-2 greenbox" id = "b27">
+          </div>
+          <div class="col-md-2 greenbox" id = "b28">
+          </div>
+          <div class="col-md-2 greenbox" id = "b29">
+          </div>
+          <div class="col-md-2 greenbox" id = "b30">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 greenbox" id = "b31">
+          </div>
+          <div class="col-md-2 greenbox" id = "b32">
+          </div>
+          <div class="col-md-2 greenbox" id = "b33">
+          </div>
+          <div class="col-md-2 greenbox" id = "b34">
+          </div>
+          <div class="col-md-2 greenbox" id = "b35">
+          </div>
+          <div class="col-md-2 greenbox" id = "b36">
+          </div>
+          </div>
+        </div>
+      </form>
+      <button type="button" name="button" id="restart" class="btn btn-transparent">Restart the Game</button>
+      <button type="button" class="btn btn-transparent" onclick="location.href='twoPlayers.html';">Play with Friend!</button>
+      <button type="button" class="btn btn-transparent" onclick="location.href='../index.html';">Home</button>
+      <br>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <h2>Gameboard colors:</h2>
+      <ul>
+        <li>Red: Miss</li>
+        <li>Green: Hit</li>
+        <li>Orange: Selected</li>
+        <li>Yellow: Winner's remaining squares</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
